@@ -1595,6 +1595,13 @@ a {
 a:hover {
   color: #9183a6;
 }
+#site-title,
+#site-subtitle,
+.site-name,
+#aside-content .author-info__name,
+#aside-content .author-info__description {
+  font-family: ZhuZiAWan_light;
+}
 .is-center {
   text-align: center;
 }
@@ -2052,6 +2059,7 @@ figure.highlight pre .javascript .function {
   height: 100%;
   vertical-align: top;
   text-align: center;
+  font-family: ZhuZiAWan_light;
 }
 @media screen and (max-width: 768px) {
   .error404 #error-wrap .error-content .error-info {
@@ -3452,7 +3460,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.5s;
 }
 #page-header.full_page {
-  height: 400px;
+  height: 100vh;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
