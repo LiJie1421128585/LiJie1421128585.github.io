@@ -248,6 +248,27 @@
   </entry>
   
   <entry>
+    <title>newname</title>
+    <link href="https://lijie1421128585.github.io/2024/06/02/newname/"/>
+    <id>https://lijie1421128585.github.io/2024/06/02/newname/</id>
+    <published>2024-06-02T13:01:24.000Z</published>
+    <updated>2024-09-01T08:35:23.688Z</updated>
+    
+    <content type="html"><![CDATA[<p>12345</p><p>gfhbhtygn</p><p>推荐阅读：HTTPS 握手过程中，客户端如何验证证书的合法性</p><p>首先，所有的证书都是由 CA 机构签发的，CA 机构是一个受信任的第三方机构，它会对证书的申请者进行身份验证，然后签发证书。</p><p>CA 就像是网络世界的公安局，具有极高的可信度。</p><p>﻿</p><p><img src="https://www.yuque.com/api/filetransfer/images?url=https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/nice-article/weixin-mianznxjsjwllsewswztwxxssc-77213977-9def-4118-b125-a26e8737d423.jpg&sign=9af3249dc1bec37f2d2b8f7c157c66b7874eb8f65dc1e826bf30dd7a96c33687" alt="img"></p><p>﻿</p><p>CA 签发证书的过程是非常严格的：</p><p>●首先，CA 会把持有者的公钥、⽤途、颁发者、有效时间等信息打成⼀个包，然后对这些信息进⾏ Hash 计算，得到⼀个 Hash 值；</p><p>●然后 CA 会使⽤⾃⼰的私钥将该 Hash 值加密，⽣成 Certificate Signature；</p><p>●最后将 Certificate Signature 添加在⽂件证书上，形成数字证书。</p><p>客户端（通常是浏览器，通常会集成 CA 的公钥信息）在校验证书的合法性时，主要通过以下步骤来校验证书的合法性。</p><p>●浏览器会读取证书的所有者、有效期、颁发者等信息，先校验网站域名是否一致，然后校验证书的有效期是否过期；</p><p>●浏览器开始查找内置的 CA，与服务器返回证书中的颁发者进行对比，确认是否为合法机构；</p><p>●如果是，从内部植入的 CA 公钥解密 Certificate 的 Signature 内容，得到⼀个 Hash 值 H2；</p><p>●使⽤同样的 Hash 算法获取证书的 Hash 值 H1，⽐较 H1 和 H2，如果值相同，则为可信赖的证书，否则告警。</p><p>假如在 HTTPS 的通信过程中，中间人篡改了证书，但由于他没有 CA 机构的私钥，所以无法生成正确的 Signature，因此就无法通过校验。</p><p>1Java 面试指南（付费）收录的得物面经同学 1 面试原题：HTTPS，中间人伪造证书怎么办，伪造证书机构</p><p> 22.如何理解 HTTP 协议是无状态的？ </p><p>HTTP 协议是无状态的，这意味着每个 HTTP 请求都是独立的，服务器不会保留任何关于客户端请求的历史信息。</p><p>●每个 HTTP 请求都包含了所必须的信息，服务器在处理当前请求时，不依赖于之前的任何请求信息。</p><p>●放到请求头里：把 SessionID 放到请求的 Header 里，比较常用。</p>]]></content>
+    
+    
+    <summary type="html">一起写个数据库—1.从最简单的TM开始</summary>
+    
+    
+    
+    <category term="MYDB" scheme="https://lijie1421128585.github.io/categories/MYDB/"/>
+    
+    
+    <category term="MySQL" scheme="https://lijie1421128585.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一起写个数据库—0.项目结构和一些不得不说的话</title>
     <link href="https://lijie1421128585.github.io/2024/06/01/%E4%B8%80%E8%B5%B7%E5%86%99%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%BA%93%E2%80%940.%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E5%92%8C%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%AF%B4%E7%9A%84%E8%AF%9D/"/>
     <id>https://lijie1421128585.github.io/2024/06/01/%E4%B8%80%E8%B5%B7%E5%86%99%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%BA%93%E2%80%940.%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E5%92%8C%E4%B8%80%E4%BA%9B%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%AF%B4%E7%9A%84%E8%AF%9D/</id>
